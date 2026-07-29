@@ -2,6 +2,8 @@
 
 一个用于管理 Microsoft Flight Simulator 2020 / 2024 外部自启动程序的 Windows 图形工具。它直接读取游戏的 `exe.xml`，可以添加、编辑、启用、停用或删除自启动项。
 
+首次运行时可选择简体中文或 English。语言选择保存在当前 Windows 用户的本地设置中，也可以通过主界面右上角随时切换。
+
 ## 支持版本
 
 | 游戏版本 | 发行渠道 | 自动识别位置 |
@@ -76,4 +78,30 @@ python -m pip install -r requirements-dev.txt
 
 ## 当前版本
 
-`v1.1.0`
+`v1.2.0`
+
+---
+
+## English
+
+MSFS Autostart Manager is a Windows GUI for managing external programs listed in the `exe.xml` files used by Microsoft Flight Simulator 2020 and 2024.
+
+On first launch, choose **English** or **简体中文**. The selection is stored for the current Windows user and can be changed later from the language button in the top-right corner.
+
+### Supported editions
+
+- MSFS 2024 Microsoft Store / Xbox
+- MSFS 2024 Steam
+- MSFS 2020 Microsoft Store / Xbox
+- MSFS 2020 Steam
+
+The app automatically detects existing configurations. You can also select another `exe.xml` manually.
+
+### Quick start
+
+1. Download `MSFS-Autostart-Manager.exe` from [Releases](https://github.com/JCH2333/msfs-autostart-manager/releases/latest).
+2. Close the relevant MSFS version.
+3. Run the downloaded EXE; Python is not required.
+4. Choose a language and select the configuration source in the top-right corner.
+
+You can add, edit, enable, disable, locate, or remove autostart entries. Removing an entry does not delete the program itself. A timestamped backup of `exe.xml` is created before every change.

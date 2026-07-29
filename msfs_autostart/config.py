@@ -72,7 +72,7 @@ class ExeXmlDocument:
         self.tree = ET.parse(self.path)
         self.root = self.tree.getroot()
         if self.root.tag != "SimBase.Document":
-            raise ValueError("这不是有效的 MSFS exe.xml 配置文件。")
+            raise ValueError("Invalid MSFS exe.xml configuration file.")
 
     def entries(self) -> list[LaunchEntry]:
         result: list[LaunchEntry] = []
@@ -80,7 +80,7 @@ class ExeXmlDocument:
             result.append(
                 LaunchEntry(
                     element=element,
-                    name=self._text(element, "Name") or "未命名程序",
+                    name=self._text(element, "Name"),
                     path=self._text(element, "Path"),
                     arguments=self._text(element, "CommandLine"),
                     disabled=self._bool(element, "Disabled"),

@@ -1,15 +1,23 @@
 VSVersionInfo(
-  ffi=FixedFileInfo(filevers=(1, 1, 0, 0), prodvers=(1, 1, 0, 0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0)),
+  ffi=FixedFileInfo(filevers=(1, 2, 0, 0), prodvers=(1, 2, 0, 0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0)),
   kids=[
     StringFileInfo([StringTable('080404b0', [
       StringStruct('CompanyName', 'Local Tool'),
       StringStruct('FileDescription', 'MSFS 自启动管理器'),
-      StringStruct('FileVersion', '1.1.0'),
+      StringStruct('FileVersion', '1.2.0'),
       StringStruct('InternalName', 'MSFS-Autostart-Manager'),
       StringStruct('OriginalFilename', 'MSFS-Autostart-Manager.exe'),
       StringStruct('ProductName', 'MSFS 自启动管理器'),
-      StringStruct('ProductVersion', '1.1.0')
+      StringStruct('ProductVersion', '1.2.0')
+    ]), StringTable('040904b0', [
+      StringStruct('CompanyName', 'Local Tool'),
+      StringStruct('FileDescription', 'MSFS Autostart Manager'),
+      StringStruct('FileVersion', '1.2.0'),
+      StringStruct('InternalName', 'MSFS-Autostart-Manager'),
+      StringStruct('OriginalFilename', 'MSFS-Autostart-Manager.exe'),
+      StringStruct('ProductName', 'MSFS Autostart Manager'),
+      StringStruct('ProductVersion', '1.2.0')
     ])]),
-    VarFileInfo([VarStruct('Translation', [2052, 1200])])
+    VarFileInfo([VarStruct('Translation', [2052, 1200, 1033, 1200])])
   ]
 )
